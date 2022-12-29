@@ -318,7 +318,56 @@ template {
   display: none;
 }
 
-/* FONTS */ /* GENERAL */
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Cormorant-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Cormorant-Medium.ttf");
+}
+@font-face {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Cormorant-Regular.ttf");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Cormorant-Regular.ttf");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Cormorant-Regular.ttf");
+}
+/* GENERAL */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -352,10 +401,19 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
+  font-family: "Roboto";
+  background-color: #f8edeb;
   /* font-size: 16px; */
   /* font-weight: 400; */
   /* line-height: var(--main-line-height); */
+}
+
+.home_body {
+  background-color: #f8f9fa;
+}
+
+.active {
+  border-bottom: 1px solid black;
 }
 
 /* STICKY-FOOTER */
@@ -386,4 +444,168 @@ body {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.logo_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav_item {
+  list-style: none;
+}
+.nav_item + .nav_item {
+  margin-left: 50px;
+}
+.nav_link {
+  text-decoration: none;
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 20px;
+}
+.nav_link:hover {
+  border-bottom: 1px solid black;
+}
+.nav_btn {
+  padding: 5px 30px;
+  border: 1px solid #495057;
+  color: black;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-size: 20px;
+}
+.nav_btn:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.hero_inner {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.hero_img_img {
+  border-radius: 50%;
+}
+
+.text_title {
+  width: 100%;
+  max-width: 660px;
+  font-family: "Cormorant";
+  color: #110f0e;
+  font-size: 54px;
+  font-weight: 800;
+}
+.text_desc {
+  margin-bottom: 60px;
+  font-family: "Cormorant";
+  color: #110f0e;
+  font-size: 19px;
+  font-weight: 700;
+}
+.text_link {
+  padding: 11px 50px;
+  background-color: #e6beae;
+  -webkit-box-shadow: 0 1px 3px #b4aeb2;
+          box-shadow: 0 1px 3px #b4aeb2;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: #110f0e;
+  font-size: 16px;
+  font-weight: 400;
+}
+.text_link:hover {
+  background-color: #fff;
+  border: 1px solid lightgrey;
+}
+
+.icons {
+  margin-top: 150px;
+  margin-left: -38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.icons_item {
+  list-style: none;
+}
+.icons_item + .icons_item {
+  margin-left: 20px;
+}
+.icons_icon {
+  width: 29px;
+  height: 29px;
+}
+
+.home {
+  padding-top: 60px;
+  padding-bottom: 1000px;
+}
+.home_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home_text_title {
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 60px;
+}
+.home_text_desc {
+  width: 100%;
+  max-width: 470px;
+  font-family: "Cormorant";
+  font-weight: 500;
+  color: black;
+  font-size: 26px;
+}
+.home_img {
+  position: relative;
+}
+.home_img_item {
+  position: absolute;
+  top: calc(50% - 40px);
+  right: calc(50% + 120px);
+  width: 340px;
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */
