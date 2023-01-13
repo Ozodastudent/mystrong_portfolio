@@ -1,7 +1,7 @@
 .home {
   margin-top: 150px;
   padding-top: 60px;
-  padding-bottom: 1000px;
+  padding-bottom: 10px;
   &_intro {
     display: flex;
     justify-content: space-between;
@@ -35,6 +35,20 @@
 }
 .home_about {
   margin-top: 250px;
+}
+.home_about_title {
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  background-image: url("../../images/services_textbg.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(505px);
+  background-size: 185px;
+}
+.home_about_one {
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,17 +56,11 @@
 .home_about_images {
   position: relative;
 }
-.home_about_images_card {
-  position: absolute;
-  z-index: 2;
-  top: calc(50% + 60px);
-  left: calc(20%);
-}
 .home_about_images_image1 {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: calc(50% - 60px);
-  left: calc(50% + 80px);
+  left: calc(50% + 90px);
 }
 .home_about_text {
   width: 100%;
@@ -62,49 +70,265 @@
   font-family: "Cormorant";
   font-weight: 500;
   color: black;
-  font-size: 26px;
+  font-size: 24px;
 }
+.home_about_two {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_about_two_text {
+  width: 100%;
+  max-width: 550px;
+}
+.home_about_two_text_item {
+  font-family: "Cormorant";
+  font-weight: 500;
+  color: black;
+  font-size: 24px;
+}
+.home_about_two_images {
+  position: relative;
+  display: flex;
+}
+.home_about_two_images_item_one {
+  width: 410px;
+  height: 440px;
+  border-radius: 10px;
+}
+
 .home_works {
-  margin-top: 310px;
+  margin-top: 240px;
 }
 .home_works_titles {
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
-  // background-color: lightcoral;
 }
 .home_works_titles_one {
   margin-bottom: 0;
   font-family: "Cormorant";
   font-weight: 600;
   color: black;
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   background-image: url("../../images/services_textbg.png");
   background-repeat: no-repeat;
-  background-position-x: calc(220px);
-  background-size: 357px;
+  background-position-x: calc(245px);
+  background-size: 307px;
 }
 .home_works_titles_two {
+  margin-top: 30px;
   font-family: "Cormorant";
   font-weight: 600;
   color: black;
   font-size: 25px;
   text-align: center;
 }
+.home_works_titles_two_link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.home_about_three {
+  margin-top: 150px;
+}
+.home_about_three_title {
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+.home_about_three_card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.home_about_three_list {
+  list-style: none;
+}
+.home_about_three_item {
+  margin-top: 10px;
+  padding: 10px 50px;
+  border: 1px solid lightgrey;
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: silver;
+    border: 1px solid white;
+  }
+}
 .home_works_cards {
   margin-top: 80px;
 }
 .home_works_list {
   list-style: none;
-  // display: flex;
-  // flex-wrap: wrap;
 }
 .home_works_box {
   margin-top: 20px;
 }
 .home_works_item {
   width: 280px;
-  height: 200px;
-  background-color: coral;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.home_work_image {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.view_more {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 55px);
+  width: 120px;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: pink;
+  border-radius: 10px;
+}
+.home_works_link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cormorant";
+  font-weight: 500;
+  color: rgb(37, 37, 37);
+  font-size: 18px;
+  text-decoration: none;
+  &:hover .view_more {
+    display: flex;
+  }
+  &:hover {
+    color: grey;
+  }
+  &:hover .home_work_image {
+    opacity: 0.2;
+  }
+}
+.home_blog {
+  margin-top: 200px;
+}
+.home_blog_title {
+  margin-bottom: 110px;
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  background-image: url("../../images/services_textbg.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(445px);
+  background-size: 307px;
+}
+
+.blog_part_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home_blog_image {
+  width: 490px;
+  height: 340px;
+}
+.home_blog_text {
+  width: 100%;
+  max-width: 400px;
+}
+.home_blog_text_item {
+  font-family: "Cormorant";
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 24px;
+  text-align: center;
+}
+.home_blog_text_item_link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.home_conact {
+  margin-top: 200px;
+  position: relative;
+}
+.home_conact_titles {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home_conact_titles_one {
+  margin-bottom: 0;
+  font-family: "Cormorant";
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 50px;
+  text-align: center;
+}
+.home_conact_titles_two {
+  margin-bottom: 60px;
+  font-family: "Cormorant";
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 25px;
+  text-align: center;
+}
+.home_conact_titles_link {
+  padding: 10px 50px;
+  border: 2px solid grey;
+  text-decoration: none;
+  font-family: "Cormorant";
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  &:hover {
+    background-color: rgba(211, 211, 211, 0.623);
+  }
+}
+.home_contact_icons {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.home_contact_icons_list {
+  display: flex;
+  list-style: none;
+}
+.home_contact_icons_item {
+  margin-right: 20px;
+}
+.home_contact_icons_link {
+  text-decoration: none;
+}
+.home_contact_icon {
+  width: 30px;
+  height: 30px;
+}
+.footer {
+  margin-top: 150px;
+}
+.footer_text {
+  font-family: "Cormorant";
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 16px;
+  text-align: center;
 }
