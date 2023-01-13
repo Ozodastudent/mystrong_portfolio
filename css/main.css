@@ -447,9 +447,14 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #f8f9fa;
 }
 .header_inner {
   display: -webkit-box;
@@ -574,10 +579,11 @@ body {
 }
 
 .home {
+  margin-top: 150px;
   padding-top: 60px;
   padding-bottom: 1000px;
 }
-.home_inner {
+.home_intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,4 +614,96 @@ body {
   right: calc(50% + 120px);
   width: 340px;
   height: 300px;
+}
+
+.home_about {
+  margin-top: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_about_images {
+  position: relative;
+}
+
+.home_about_images_card {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% + 60px);
+  left: 20%;
+}
+
+.home_about_images_image1 {
+  position: absolute;
+  z-index: -1;
+  top: calc(50% - 60px);
+  left: calc(50% + 80px);
+}
+
+.home_about_text {
+  width: 100%;
+  max-width: 550px;
+}
+
+.home_about_text_item {
+  font-family: "Cormorant";
+  font-weight: 500;
+  color: black;
+  font-size: 26px;
+}
+
+.home_works {
+  margin-top: 310px;
+}
+
+.home_works_titles {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.home_works_titles_one {
+  margin-bottom: 0;
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  background-image: url("../../images/services_textbg.png");
+  background-repeat: no-repeat;
+  background-position-x: 220px;
+  background-size: 357px;
+}
+
+.home_works_titles_two {
+  font-family: "Cormorant";
+  font-weight: 600;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+
+.home_works_cards {
+  margin-top: 80px;
+}
+
+.home_works_list {
+  list-style: none;
+}
+
+.home_works_box {
+  margin-top: 20px;
+}
+
+.home_works_item {
+  width: 280px;
+  height: 200px;
+  background-color: coral;
 }/*# sourceMappingURL=main.css.map */

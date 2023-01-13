@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="home_body">
@@ -23,15 +29,17 @@
             <nav class="nav">
               <ul class="nav_list">
                 <li class="nav_item">
-                  <a href="./home.html" class="nav_link active">Home</a>
+                  <a href="#home_part" class="nav_link active">Home</a>
                 </li>
                 <li class="nav_item">
-                  <a href="" class="nav_link">About me</a>
+                  <a href="#about_part" class="nav_link">About me</a>
                 </li>
                 <li class="nav_item">
-                  <a href="" class="nav_link">My works</a>
+                  <a href="#protfolio_part" class="nav_link">My works</a>
                 </li>
-                <li class="nav_item"><a href="" class="nav_link">Blog</a></li>
+                <li class="nav_item">
+                  <a href="#blog_part" class="nav_link">Blog</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -43,17 +51,106 @@
       <div class="home">
         <div class="container">
           <div class="home_inner">
-            <div class="home_text">
-              <h2 class="home_text_title">Ozoda Shaxobiddinova</h2>
-              <p class="home_text_desc">
-                Hi, I'm Ozoda Frontend Developer specialized in building user
-                interfaces of the web sites
-              </p>
+            <div id="home_part" class="home_intro">
+              <div class="home_text">
+                <h2 class="home_text_title">Ozoda Shaxobiddinova</h2>
+                <p class="home_text_desc">
+                  Hi, I'm Ozoda Frontend Developer specialized in building user
+                  interfaces of the web sites. I design and code beautifully
+                  simple things, and I love what I do.
+                </p>
+              </div>
+              <div class="home_img">
+                <video src="./images/name.mp4" autoplay muted></video>
+                <img class="home_img_item" src="./images/greyimg.png" alt="" />
+              </div>
             </div>
-            <div class="home_img">
-              <video src="./images/name.mp4" autoplay muted></video>
-              <img class="home_img_item" src="./images/greyimg.png" alt="" />
+            <div id="about_part" class="home_about">
+              <div class="home_about_images">
+                <img
+                  class="rounded-2"
+                  width="270"
+                  src="./images/hijabi3.jpg"
+                  alt="gil image"
+                /><img
+                  class="home_about_images_image1 rounded-2"
+                  src="./images/hijabi5.jpg"
+                  alt=""
+                />
+                <div class="d-flex home_about_images_card">
+                  <img
+                    class="rounded-2"
+                    src="./images/hijabi4.jpg"
+                    alt="gil image"
+                  />
+                </div>
+              </div>
+              <div class="home_about_text">
+                <p class="home_about_text_item">
+                  I'm a student of New Uzbekistan University. Lorem ipsum dolor
+                  sit amet consectetur, adipisicing elit. Qui a dolorum
+                  necessitatibus magnam placeat temporibus sed tempore, iste
+                  nostrum! Quae. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Exercitationem labore maxime obcaecati
+                  doloribus dolore nam voluptate optio libero velit quaerat.
+                </p>
+              </div>
             </div>
+            <div id="protfolio_part" class="home_works">
+              <div class="home_works_titles">
+                <h4 class="home_works_titles_one">Enjoy from my work!</h4>
+                <p class="home_works_titles_two">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro, voluptates Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Maxime, quam.
+                </p>
+              </div>
+              <div class="home_works_cards">
+                <ul class="home_works_list row">
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                  <div class="col-3 home_works_box">
+                    <li class="home_works_item">
+                      <a href="#" class="home_works_link"></a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div id="blog_part" class="home_blog"></div>
           </div>
         </div>
       </div>
