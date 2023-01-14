@@ -12,6 +12,9 @@
       font-weight: 600;
       color: black;
       font-size: 60px;
+      &::selection {
+        background-color: rgb(245, 210, 216);
+      }
     }
     &_desc {
       width: 100%;
@@ -20,6 +23,9 @@
       font-weight: 500;
       color: black;
       font-size: 26px;
+      &::selection {
+        background-color: rgb(245, 210, 216);
+      }
     }
   }
   &_img {
@@ -42,6 +48,9 @@
   color: black;
   font-size: 35px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
   background-image: url("../../images/services_textbg.png");
   background-repeat: no-repeat;
   background-position-x: calc(505px);
@@ -71,6 +80,9 @@
   font-weight: 500;
   color: black;
   font-size: 24px;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_about_two {
   margin-top: 300px;
@@ -87,6 +99,9 @@
   font-weight: 500;
   color: black;
   font-size: 24px;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_about_two_images {
   position: relative;
@@ -117,6 +132,9 @@
   background-repeat: no-repeat;
   background-position-x: calc(245px);
   background-size: 307px;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_works_titles_two {
   margin-top: 30px;
@@ -125,6 +143,9 @@
   color: black;
   font-size: 25px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_works_titles_two_link {
   text-decoration: none;
@@ -141,6 +162,9 @@
   color: black;
   font-size: 25px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_about_three_card {
   margin-top: 20px;
@@ -159,9 +183,12 @@
   color: black;
   font-size: 22px;
   cursor: pointer;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
   &:hover {
     color: #fff;
-    background-color: silver;
+    background-color: rgb(245, 210, 216);
     border: 1px solid white;
   }
 }
@@ -209,6 +236,9 @@
   color: rgb(37, 37, 37);
   font-size: 18px;
   text-decoration: none;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
   &:hover .view_more {
     display: flex;
   }
@@ -229,6 +259,9 @@
   color: black;
   font-size: 35px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
   background-image: url("../../images/services_textbg.png");
   background-repeat: no-repeat;
   background-position-x: calc(445px);
@@ -254,6 +287,9 @@
   line-height: 150%;
   font-size: 24px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_blog_text_item_link {
   text-decoration: none;
@@ -280,6 +316,9 @@
   line-height: 150%;
   font-size: 50px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_conact_titles_two {
   margin-bottom: 60px;
@@ -288,6 +327,9 @@
   line-height: 150%;
   font-size: 25px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
 .home_conact_titles_link {
   padding: 10px 50px;
@@ -298,8 +340,12 @@
   line-height: 150%;
   font-size: 25px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
   color: black;
   &:hover {
+    color: rgb(58, 57, 57);
     background-color: rgba(211, 211, 211, 0.623);
   }
 }
@@ -331,4 +377,7 @@
   line-height: 150%;
   font-size: 16px;
   text-align: center;
+  &::selection {
+    background-color: rgb(245, 210, 216);
+  }
 }
