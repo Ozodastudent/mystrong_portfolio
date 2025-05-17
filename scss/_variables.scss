@@ -1,14 +1,8 @@
-/* VARIABLES */
-:root{
-  --light-background: #f2ece4;
-  --light-text: #036;
-  /* --main-text-color : #fff; */
-  /* --main-bg-color : #fff; */
-  /* --main-font-size : 16px; */
-  // --main-font-weight : #{$weight};
-  /* --main-line-height : 1.5; */
-}
-
-$dark-background: #6b717f;
-$dark-text: #d2e1dd;
-
+$primary-color: #212529;
+$secondary-color: #495057;
+$background-color: #f8f9fa;
+$accent-color: rgb(245, 210, 216);
+$max-width: 1200px;
+$spacing-unit: 1rem;
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;

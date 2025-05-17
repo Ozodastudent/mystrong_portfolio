@@ -1,10 +1,7 @@
 @import "variables";
-@import "mixins";
 @import "normalize";
+@import "mixins";
 @import "fonts";
 @import "general";
-@import "blocks/blocks";
-
-
-
-
+@import "blocks/header";
+@import "blocks/home";
